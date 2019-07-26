@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "npm run test:node && npm run test:browser",
-    "test:node": "mocha test/index.js",
-    "test:browser": "cd test/ && live-server"
+    "test:node": "mocha test/node.js",
+    "test:browser": "npm run build:test && live-server test/",
+    "build:test": "webpack test/node.js -o test/browser.js"
   },
   "repository": {
     "type": "git",
@@ -17,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/liquidcarrot/repository/issues"
   },
-  "homepage": "https://github.com/liquidcarrot/repository#readme"
+  "homepage": "https://github.com/liquidcarrot/repository#readme",
+  "devDependencies": {
+    "webpack-cli": "^3.3.6"
+  }
 }
