@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Testing</title>
+    <link href="https://cdn.rawgit.com/mochajs/mocha/2.2.5/mocha.css" rel="stylesheet" />
+  <script src="https://unpkg.com/mocha@4.0.1/mocha.js"></script>
+  <script src="https://unpkg.com/chai@4.1.2/chai.js"></script>
+</head>
+<body>
+  <div id="mocha"></div>
+  
+  
+  <script>
+    mocha.setup('bdd');
+    expect = chai.expect;
+  </script>
+  
+  <!-- Import Unit Tests -->
+  <script src="unit/index.js"></script>
+  <!-- END Import Unit Tests -->
+  
+  <script>
+      mocha.checkLeaks();
+      mocha.run();
+  </script>
+
+</body>
+</html>
