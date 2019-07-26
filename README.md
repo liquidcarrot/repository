@@ -10,6 +10,7 @@ Creating repositories like LoDash, Neo-Async (& Async), BlueBird, in JavaScript 
 - **Benchmarks**
 - **Licenses**
 - **Code of Conducts**
+- **Contribution Guidelines**
 - **Patronage**
 - **Code Tranpiling** - _supporting older version of JavaScript_
 - **Code Wrangling** - _shortening code and making it unreadable for production._
