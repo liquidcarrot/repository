@@ -8,6 +8,8 @@ Creating repositories like LoDash, Neo-Async (& Async), BlueBird, in JavaScript 
 - **Documentation**
 - **Unit Tests**
 - **Benchmarks**
+- **Code Coverage**
+- **Linting**
 - **Licenses**
 - **Code of Conducts**
 - **Contribution Guidelines**
@@ -15,3 +17,31 @@ Creating repositories like LoDash, Neo-Async (& Async), BlueBird, in JavaScript 
 - **Code Tranpiling** - _supporting older version of JavaScript_
 - **Code Wrangling** - _shortening code and making it unreadable for production._
 - **Node.js & Browser** Support - _effectively navigating the hell-hole that is module/package importing/exporting in JavaScript_
+
+## Scripts
+
+The following is a list of scripts that can be used to manipulate different components of a library.
+
+### Documentation
+
+**Markdown + HTML**
+>Creates (or updates) a `DOCUMENTATION.md` file in the root of your repository using `JSDoc` and generates `.html` files in the `doc/` folder which hold a website version of `DOCUMENTATION.md`.
+
+```bash
+npm run docs
+```
+
+**Markdown (Only)**
+>Creates (or updates) a `DOCUMENTATION.md` file in the root of your repository using `JSDoc`
+
+
+```bash
+npm run docs:markdown
+```
+
+**HTML (Only)**
+>Generates `.html` files in the `doc/` folder which hold a website version of `DOCUMENTATION.md`.
+
+```bash
+npm run docs:html
+```
