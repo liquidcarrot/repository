@@ -45,3 +45,26 @@ npm run docs:markdown
 ```bash
 npm run docs:html
 ```
+
+### Testing (Mocha)
+
+**Node.js + Browser**
+>Runs units tests in terminal (CLI) & in your default browser - typically through `https://localhost:8080/`
+
+```bash
+npm test
+```
+
+**Node.js (Only)**
+>Runs units tests in terminal (CLI)
+
+```bash
+npm run test:node
+```
+
+**Browser (Only)**
+>Runs units tests in your default browser - typically through `https://localhost:8080/`
+
+```bash
+npm run test:browser
+```
