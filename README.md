@@ -3,20 +3,18 @@
 
 ## Problems
 
-Creating repositories like LoDash, Neo-Async (& Async), BlueBird, in JavaScript is HUGE pain in the ass! A lot of time is spent working on things that are not the main repository. This repository will help get kickstarted with:
+Creating repositories like LoDash, Neo-Async (& Async), BlueBird, in JavaScript is HUGE pain in the ass! A lot of time is spent working on things that are not the main repository. This repository will help get kickstarted with documentation, unit tests, benchmarks, licenses, code of conducts, contribution guidelines, linting, code transpiling, code wrangling, code coverage, patronage, and Node.js & Browswer Support.
 
-- **Documentation**
-- **Unit Tests**
-- **Benchmarks**
-- **Code Coverage**
-- **Linting**
-- **Licenses**
-- **Code of Conducts**
-- **Contribution Guidelines**
-- **Patronage**
-- **Code Tranpiling** - _supporting older version of JavaScript_
-- **Code Wrangling** - _shortening code and making it unreadable for production._
-- **Node.js & Browser** Support - _effectively navigating the hell-hole that is module/package importing/exporting in JavaScript_
+## Scripts
+
+The following is a list of scripts that can be used to manipulate different components of a library.
+
+* **`npm run docs`:** _Creates (or updates) a `DOCUMENTATION.md` file in the root of your repository using `JSDoc` and generates `.html` files in the `doc/` folder which hold a website version of `DOCUMENTATION.md`_
+* **`npm run docs:markdown`** _Creates (or updates) a `DOCUMENTATION.md` file in the root of your repository using `JSDoc`_
+* **`npm run docs:html`** _Generates `.html` files in the `doc/` folder which hold a website version of `DOCUMENTATION.md`_
+* **`npm test`** _Runs units tests in terminal (CLI) & in your default browser - typically through `https://localhost:8080/`_
+* **`npm run test:node`** _Runs units tests in terminal (CLI)_
+* **`npm run test:browser`** _Runs units tests in your default browser - typically through `https://localhost:8080/`_
 
 ## File Structure
 
@@ -33,55 +31,4 @@ Creating repositories like LoDash, Neo-Async (& Async), BlueBird, in JavaScript 
 |__ tests/
 |__ scripts/
 |__ src/
-```
-
-## Scripts
-
-The following is a list of scripts that can be used to manipulate different components of a library.
-
-### Documentation
-
-**Markdown + HTML**
->Creates (or updates) a `DOCUMENTATION.md` file in the root of your repository using `JSDoc` and generates `.html` files in the `doc/` folder which hold a website version of `DOCUMENTATION.md`.
-
-```bash
-npm run docs
-```
-
-**Markdown (Only)**
->Creates (or updates) a `DOCUMENTATION.md` file in the root of your repository using `JSDoc`
-
-
-```bash
-npm run docs:markdown
-```
-
-**HTML (Only)**
->Generates `.html` files in the `doc/` folder which hold a website version of `DOCUMENTATION.md`.
-
-```bash
-npm run docs:html
-```
-
-### Testing (Mocha)
-
-**Node.js + Browser**
->Runs units tests in terminal (CLI) & in your default browser - typically through `https://localhost:8080/`
-
-```bash
-npm test
-```
-
-**Node.js (Only)**
->Runs units tests in terminal (CLI)
-
-```bash
-npm run test:node
-```
-
-**Browser (Only)**
->Runs units tests in your default browser - typically through `https://localhost:8080/`
-
-```bash
-npm run test:browser
 ```
