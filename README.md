@@ -18,6 +18,23 @@ Creating repositories like LoDash, Neo-Async (& Async), BlueBird, in JavaScript 
 - **Code Wrangling** - _shortening code and making it unreadable for production._
 - **Node.js & Browser** Support - _effectively navigating the hell-hole that is module/package importing/exporting in JavaScript_
 
+## File Structure
+
+```
+.
+|__ README.md
+|__ DOCUMENTATION.md
+|__ CODE_OF_CONDUCT.md
+|__ CONTRIBUTING.md
+|__ LICENSE
+|__ package.json
+|__ .gitignore
+|__ docs/
+|__ tests/
+|__ scripts/
+|__ src/
+```
+
 ## Scripts
 
 The following is a list of scripts that can be used to manipulate different components of a library.
