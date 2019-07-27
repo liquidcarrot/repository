@@ -7,7 +7,10 @@
     "test": "npm run test:node && npm run test:browser",
     "test:node": "mocha test/node.js",
     "test:browser": "npm run build:test && live-server test/",
-    "build:test": "webpack test/node.js -o test/browser.js"
+    "build:test": "webpack test/node.js -o test/browser.js",
+    "doc": "npm run doc:markdown && npm run doc:html",
+    "doc:html": "jsdoc -c jsdoc.conf.json",
+    "doc:markdown": "jsdoc2md src/*.js > DOCUMENTATION.md"
   },
   "repository": {
     "type": "git",
@@ -21,6 +24,7 @@
   "homepage": "https://github.com/liquidcarrot/repository#readme",
   "devDependencies": {
     "chai": "^4.2.0",
+    "jsdoc-to-markdown": "^5.0.0",
     "live-server": "^1.2.1",
     "mocha": "^6.2.0",
     "webpack": "^4.37.0",
