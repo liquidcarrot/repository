@@ -27,6 +27,7 @@ The following is a list of scripts that can be used to manipulate different comp
 |__ LICENSE
 |__ package.json
 |__ .gitignore
+|__ dist/
 |__ docs/
 |__ tests/
 |__ scripts/
