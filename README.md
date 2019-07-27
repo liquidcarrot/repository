@@ -36,3 +36,4 @@ The following is a list of scripts that can be used to manipulate different comp
 ## Getting Started
 
 * [Unit Testing](https://github.com/liquidcarrot/repository/wiki/Unit-Testing)
+* [Packaging](https://github.com/liquidcarrot/repository/wiki/Unit-Testing)

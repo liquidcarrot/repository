@@ -7,6 +7,8 @@
     "test": "npm run test:node && npm run test:browser",
     "test:node": "mocha test/node.js",
     "test:browser": "npm run build:test && live-server test/",
+    "build": "npm run build:src && npm run doc",
+    "build:src": "browserify src/index.js -o dist/index.js -s 'Calculator'",
     "build:test": "webpack test/node.js -o test/browser.js",
     "doc": "npm run doc:markdown && npm run doc:html",
     "doc:html": "jsdoc -c jsdoc.conf.json",
