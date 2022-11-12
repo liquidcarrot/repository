@@ -30,6 +30,6 @@
     "live-server": "^1.2.1",
     "mocha": "^6.2.0",
     "webpack": "^4.37.0",
-    "webpack-cli": "^3.3.6"
+    "webpack-cli": "^3.3.12"
   }
 }
